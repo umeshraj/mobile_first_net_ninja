@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
 /* variables */
 :root {
   --primary: #ffc636;
@@ -21,7 +23,8 @@ li {
 /* base styles */
 body {
   background-color: var(--secondary);
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
+  font-family: "Rubik", sans-serif;
 }
 .button {
   background: none;
@@ -48,6 +51,32 @@ textarea {
   color: #f2f2f2;
 }
 /* fonts */
+/* @font-face {
+  font-family: "Rubik", sans-serif;
+} */
+h1,
+h2,
+h3,
+h4 {
+  color: #dddbff;
+  font-weight: normal;
+}
+p {
+  color: #9893d8;
+}
+h1,
+h3 {
+  font-size: 1.2em;
+}
+h2 {
+  font-size: 1.6em;
+}
+h4 {
+  font-size: 1.1em;
+}
+leading {
+  font-size: 1.1em;
+}
 
 /* mobile styles (less than 620px)*/
 
@@ -57,8 +86,14 @@ textarea {
 
 /* large tablets */
 @media screen and (min-width: 960px) {
+  body {
+    font-size: 18px;
+  }
 }
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
 }
